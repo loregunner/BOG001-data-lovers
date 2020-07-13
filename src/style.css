@@ -1,0 +1,7 @@
+@font-face{
+    font-family:Friz;
+    src: url(FrizQuadrataRegular.ttf);
+}
+h1{
+    font-family: Friz;
+}
