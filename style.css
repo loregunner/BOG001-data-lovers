@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+@font-face{
+    font-family:Friz;
+    src: url(FrizQuadrataRegular.ttf);
+}
+html{
+    font-family: Friz;
+    background-image: url(./Fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    
+
+ }
+ 
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo-nav-container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+}
+.header a{
+    color: #AA8513;
+    text-decoration: none;
+}
+.header{
+    background: none;
+    color: #AA8513;
+    padding: 50px 0;
+    z-index: 100;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ .navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ .navigation ul li{
+     display: inline-block;
+ }
+ .navigation ul li a{
+    display: block;
+     padding: 0.5rem 1rem;
+     transition: all 0.5s linear;
+     border-radius: 5px;
+ }
+ .navigation ul li a:hover{
+     background: #00000083;
+ }
+ .logo1{
+     font-size: 55px ;
+     -webkit-text-stroke: 1px white;
+    
+ }
+ .logo{
+    width: 55px;
+}
+ .contenedor2{
+    width: 700%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    
+}
+ .texto-encima{
+    display: inline-flexbox;
+    position: relative;
+    text-align: justify;
+    width: 100%;
+    margin-left: 60%;
+    top: -500px;
+    color: #BF930B;
+    font-size: 2.5vw;
+    -webkit-text-stroke: 1px white;
+    
+    
+}
+.centrado{
+    display: flex;
+    position: relative;
+    text-align: justify;
+    width: 100%;
+    margin-left: 120%;
+    top: -470px;
+   transform: translate(-50%, -50%);
+}
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Friz;
+    font-weight: 400;
+    font-size: 20px;
+    color: #B9B7B7;
+    background-color: #AA8513;
+    border: 1px solid #ffffff;
+}
+
+ .gif{
+   width: 100%;
+    border-radius: 5px;
+    border: solid #ffffff;
+    margin-top:20%;
+    
+  
+  }
+ .letra{
+     box-sizing: border-box;
+     width: 100%;
+ }
+  p{
+    position: relative;
+    color: hsl(45, 80%, 37%);
+    font-size: 5vw;
+    width: 50%;
+    margin-top: -7%;
+    margin-left: 28%;
+    
+  }
+  p1{
+    position: relative;
+    color: #AA8513 ;
+    font-size: 3vw;
+    width: 80%;
+    margin-left: 32%;
+  }
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    flex: 1;
+    overflow: hidden;
+    min-width: 250px;
+    position: relative;
+    border: 1px solid red;
+    width: 1010px;
+    height: 200px;
+    margin: 50px 170px auto;
+}
+
+
+.container1 .box{
+    flex: 2;
+    position: relative;
+    width: calc(200px - 20px);
+    height: calc(200px - 30px);
+    background: rgba(27, 25, 25, 0.267);
+    float: left;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container1 .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 180%;
+    transition: 0.5s;
+    z-index: 1;
+    color: rgba(191, 147, 11, 1);
+}
+
+.container1 .box .icon:hover{
+    top: 5px;
+    left: calc(10% - 20px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.container1 .box .icon .ic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 50px;
+}
+
+.container1 .box .icon .ic{
+    height: 20px;
+}
+
+.container1 .box .content{
+    position: absolute;
+    height: calc(100px - 10px);
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    top: 100%;
+    transition: 0.5s;
+}
+
+.container1 .box:hover .content{
+    top: 5px;
+}
+
+.container1 .box .content h3{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container1 .box .content dt{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container1 .box:nth-child(1) .icon{
+    background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg");
+    background-size: 200px 200px;
+}
+
+footer{
+    margin-top: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.containerFooter{
+    width: 100%;
+    height: 180px;
+    margin: auto;
+}
+
+.containerFooter_fila1{
+    margin: 20px 0px 0px 500px;
+    max-height: 86.6px;
+    display: inline-flex;
+}
+
+#icon {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: rgba(191, 147, 11, 0.6);
+    padding-right: 60px;
+}
+
+.containerFooter_fila2 h1{
+    font-size: 30px;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.containerFooter_fila3 h1{
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+} 
+.fondo_transparente{
+    top: 150px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.411);
+    background-position: cover;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.modal{
+    background:#211d1dd8 ;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.modal_cerrar{
+    background: #aa841370;
+    position: absolute;
+    right: 5px;
+    color: #AA8513;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal_titulo{
+    background-color: rgba(0, 0, 0, 0.685) ;
+    width: 100%;
+    height: 15%;
+    color: #AA8513;
+    font-size: 40px;
+ 
+}
+.modal_mensaje{            
+   padding: 10px 30px;
+   color: #AA8513;
+}
+.modal_final{      
+    background-color: rgba(0, 0, 0, 0.685) ;
+    width: 100%;
+    height: 15%;
+    color: #AA8513;
+    font-size: 25px;
+    text-align: center;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+   .contenedor2{
+       background-color:#ec1010;
+       margin:0 auto;
+       width: 80%;
+   }
+   .texto-encima{
+    margin: 0 auto;
+    text-align: justify;
+    width: 100%;
+    margin-left: 60%;
+    top: -160px;
+   }
+    .centrado{
+    margin: 0 auto;
+    text-align: justify;
+    width: 95%;
+    margin-left: 110%;
+    top: -140px;
+    transform: translate(-50%, -50%);
+    }
+    
+    .boton{
+        text-decoration: none;
+        padding: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: Friz;
+        font-weight: 400;
+        font-size: 8px;
+    }
+
+   .gif{
+       margin-top: 40%;
+   }
+
+   p{
+       margin-top: -30px;
+   }
+   .logo1{
+    font-size: 35px ;
+    -webkit-text-stroke: 1px white;
+   }
+   .logo{
+   width: 35px;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+ .contenedor2{
+     background-color: blue;
+     margin:0 auto;
+     width: 80%;
+ }
+ .texto-encima{
+     margin-top: 50%;
+ }
+ p{
+     top: -250px;
+}
+p1{
+    top: -253px;
+}
+}
+@media (min-width: 767px) and (max-width: 1040px){
+    .contenedor2{
+        background-color: brown;
+        margin:0 auto;
+        width: 80%;  
+    }
+   .texto-encima {
+    position: center;
+    text-align: justify;
+    width: 50%;
+    margin-left: 60%;
+    margin-top:10%;
+    font-size: 3vw;
+}
+body{
+    font-size: 3vw;
+}
+    
+}
