@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0%;
 }
 @font-face{
@@ -39,8 +38,10 @@ html{
 .header{
     background: none;
     color: #AA8513;
-    padding: 50px 0;
+    height: 150px;
     z-index: 100;
+    display: flex;
+    align-items: center;
 
     position: fixed;
     left: 0;
@@ -73,34 +74,29 @@ html{
     width: 55px;
 }
  .contenedor2{
-    width: 700%;
+     width: 70%;
     max-width: 1000px;
-    margin: 0 auto;
     overflow: hidden;
+    margin: 150px auto 20px;
+    position: relative;
+    border-radius: 15px;
     
     
 }
  .texto-encima{
-    display: inline-flexbox;
-    position: relative;
-    text-align: justify;
-    width: 100%;
-    margin-left: 60%;
-    top: -500px;
     color: #BF930B;
-    font-size: 2.5vw;
     -webkit-text-stroke: 1px white;
     
     
 }
-.centrado{
+.btn-modal{
+    position: absolute;
+    top: 20%;
+    right: 5%;
     display: flex;
-    position: relative;
-    text-align: justify;
-    width: 100%;
-    margin-left: 120%;
-    top: -470px;
-   transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+
 }
 .boton{
     text-decoration: none;
@@ -113,35 +109,33 @@ html{
     color: #B9B7B7;
     background-color: #AA8513;
     border: 1px solid #ffffff;
+    box-sizing: border-box;
 }
 
  .gif{
+    margin: 50px 0;
    width: 100%;
     border-radius: 5px;
     border: solid #ffffff;
-    margin-top:20%;
-    
-  
-  }
- .letra{
-     box-sizing: border-box;
-     width: 100%;
- }
+    }
+.box1{
+    text-align: center;
+}
   p{
     position: relative;
     color: hsl(45, 80%, 37%);
     font-size: 5vw;
-    width: 50%;
-    margin-top: -7%;
-    margin-left: 28%;
+    width: 100%;
+    margin-top: -10%;
+    margin-left: 1%;
     
   }
   p1{
     position: relative;
     color: #AA8513 ;
     font-size: 3vw;
-    width: 80%;
-    margin-left: 32%;
+    margin-left: 3%;
+    margin-top: 100%;
   }
   .home{
     display: flex;
@@ -247,6 +241,7 @@ footer{
     width: 100%;
     height: 180px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .containerFooter_fila1{
@@ -277,14 +272,13 @@ footer{
     text-align: center;
 } 
 .fondo_transparente{
-    top: 150px;
+    top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.411);
-    background-position: cover;
-    background-size: cover;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.842);
+    position: fixed;
+    z-index: 999;
     display: none;
 }
 .modal{
@@ -336,45 +330,26 @@ footer{
     font-size: 25px;
     text-align: center;
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 500px) {
    .contenedor2{
-       background-color:#ec1010;
-       margin:0 auto;
-       width: 80%;
+    margin:100px auto 10px;
+    width: 80%;   
+    border-radius: 30px;
+    position: relative;
    }
-   .texto-encima{
-    margin: 0 auto;
-    text-align: justify;
-    width: 100%;
-    margin-left: 60%;
-    top: -160px;
-   }
-    .centrado{
-    margin: 0 auto;
-    text-align: justify;
-    width: 95%;
-    margin-left: 110%;
-    top: -140px;
-    transform: translate(-50%, -50%);
-    }
-    
-    .boton{
-        text-decoration: none;
-        padding: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        font-family: Friz;
-        font-weight: 400;
-        font-size: 8px;
-    }
-
-   .gif{
-       margin-top: 40%;
-   }
-
-   p{
-       margin-top: -30px;
-   }
+   .boton{
+    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: Friz;
+    font-size: 8px;
+ }
+p{
+    margin-top: -40%;
+}
+.texto-encima{
+    font-size: 10px;
+}
    .logo1{
     font-size: 35px ;
     -webkit-text-stroke: 1px white;
@@ -383,38 +358,55 @@ footer{
    width: 35px;
     }
 }
-@media (min-width: 450px) and (max-width: 767px){
+@media (min-width: 400px) and (max-width: 767px){
  .contenedor2{
-     background-color: blue;
-     margin:0 auto;
-     width: 80%;
- }
- .texto-encima{
-     margin-top: 50%;
+     margin:100px auto;
+     width: 80%;  
+    border-radius: 30px;
+    position: relative;
  }
  p{
-     top: -250px;
-}
-p1{
-    top: -253px;
-}
-}
-@media (min-width: 767px) and (max-width: 1040px){
-    .contenedor2{
-        background-color: brown;
-        margin:0 auto;
-        width: 80%;  
+     margin-top: -20%;
+ }
+ .boton{
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Friz;
+    font-size: 7px;
+ }
+ .modal{
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
-   .texto-encima {
-    position: center;
-    text-align: justify;
-    width: 50%;
-    margin-left: 60%;
-    margin-top:10%;
-    font-size: 3vw;
+    .modal_mensaje{            
+        padding: 50px 10px;
+        font-size: 1.5vw;
+        color: #AA8513;
+     }
+     .modal_titulo{
+         font-size: 29px;
+     }
+     .modal_final{
+         font-size: 20px;
+     }
+     .modal_cerrar{
+         top: -40px;
+     }
 }
-body{
-    font-size: 3vw;
-}
+@media (min-width: 767px) and (max-width: 1500px){
+    .contenedor2{
+        margin:100px auto;
+        width: 80%;  
+        border-radius: 30px;
+        position: relative;
+
+    }
     
+   .texto-encima {
+    font-size: 4vw;
+}
 }
