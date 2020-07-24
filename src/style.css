@@ -1,5 +1,6 @@
 *{
     padding: 0%;
+    box-sizing: border-box;
 }
 @font-face{
     font-family:Friz;
@@ -73,8 +74,72 @@ html{
  .logo{
     width: 55px;
 }
+#icon-search{
+    color: white;    
+}
+
+#icon-search:hover{
+    color:#00000083;
+}
+
+#ctn-bars-search{
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 750px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#box-search{
+    position: fixed;
+    border-radius: 10px;
+    top: 165px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 750px;
+    background: white;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 750px;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: black;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgb(0, 0, 0, .5);
+    z-index: 7;
+    display: none;
+}
  .contenedor2{
-     width: 70%;
+     width: 700%;
     max-width: 1000px;
     overflow: hidden;
     margin: 150px auto 20px;
@@ -141,136 +206,126 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
-
-.container1{
-    flex: 1;
-    overflow: hidden;
-    min-width: 250px;
-    position: relative;
-    border: 1px solid red;
-    width: 1010px;
-    height: 200px;
-    margin: 50px 170px auto;
+.container3{
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
 }
 
-
-.container1 .box{
-    flex: 2;
+.selectbox{
+    width: 50%;
+    margin: auto;
     position: relative;
-    width: calc(200px - 20px);
-    height: calc(200px - 30px);
-    background: rgba(27, 25, 25, 0.267);
-    float: left;
-    margin: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
+}
+
+.select{
+    background: rgba(2, 4, 5, 0.692);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
     border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease all;
+    margin-bottom: 30px;
+    padding: 30px;
+    position: relative;
+    border: 2px solid transparent;
 }
 
-.container1 .box .icon{
+.select.active,
+.select:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+    border: 2px solid white;    
+}
+
+.select.active:before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 15px solid white ;
+    border-right: 15px solid transparent ;
+    border-bottom: 15px solid transparent ;
+    border-left: 15px solid transparent ;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 180%;
-    height: 180%;
-    transition: 0.5s;
-    z-index: 1;
-    color: rgba(191, 147, 11, 1);
+    bottom: -30px;
+    left: calc(50% - 15px);
 }
 
-.container1 .box .icon:hover{
-    top: 5px;
-    left: calc(10% - 20px);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-}
-
-.container1 .box .icon .ic{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
-    font-size: 50px;
-}
-
-.container1 .box .icon .ic{
-    height: 20px;
-}
-
-.container1 .box .content{
-    position: absolute;
-    height: calc(100px - 10px);
-    text-align: center;
-    padding: 40px;
-    box-sizing: border-box;
-    top: 100%;
-    transition: 0.5s;
-}
-
-.container1 .box:hover .content{
-    top: 5px;
-}
-
-.container1 .box .content h3{
-    margin: 0;
-    padding: 0;
-    color: black;
-}
-
-.container1 .box .content dt{
-    margin: 0;
-    padding: 0;
-    color: black;
-}
-
-.container1 .box:nth-child(1) .icon{
-    background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg");
-    background-size: 200px 200px;
-}
-
-footer{
-    margin-top: 250px;
-    background: rgba(0, 0, 0, 0.9);
+.select i{
+    font-size: 20px;
+    margin-left: 1px;
     color: rgba(255, 255, 255, 1);
 }
 
+.titulo{
+    margin-bottom: 35px;
+    color:  rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 30px;
+}
 
-.containerFooter{
+.description{
+    font-size: 15px;
+    color: #434343;
+}
+
+.options{
+    background: rgba(2, 4, 5, 0.623);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+    max-height: 200px;
+    overflow: auto;
     width: 100%;
-    height: 180px;
-    margin: auto;
-    flex-wrap: wrap;
+    display: none;
 }
 
-.containerFooter_fila1{
-    margin: 20px 0px 0px 500px;
-    max-height: 86.6px;
-    display: inline-flex;
+.options.active{
+    display: block;
+    animation: fadeIn 1s forwards;
+
 }
 
-#icon {
-    font-size: 40px;
-    line-height: 40px;
-    text-align: right;
-    color: rgba(191, 147, 11, 0.6);
-    padding-right: 60px;
+@keyframes fadeIn{
+    from{
+        transform: translateY(-100px) scale(.5);
+    }
+    to{
+        transform: translateY(0) scale(1);
+    }
 }
 
-.containerFooter_fila2 h1{
-    font-size: 30px;
-    padding: 0px;
-    margin-top: 20px;
-    text-align: center;
+.contentOption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease all;
 }
 
-.containerFooter_fila3 h1{
-    font-size: 30px;
-    padding: 0px;
-    margin: 20px 0px 0px 0px;
-    text-align: center;
-} 
+.options .contentOption{
+    padding: 30px;
+}
+
+.options .contentOption:hover{
+    background: #434343;
+}
+
+@media screen and (max-width: 900px){
+         .selectbox{
+        width: 100%;
+        }
+        .ctn-bars-search{
+            width: 100%;
+        }
+        .cover-ctn-search{
+            width: 100%;
+        }
+    
+}
+
 .fondo_transparente{
     top: 0;
     left: 0;
@@ -345,7 +400,7 @@ footer{
     font-size: 8px;
  }
 p{
-    margin-top: -40%;
+    margin-top: -10%;
 }
 .texto-encima{
     font-size: 10px;
@@ -410,3 +465,97 @@ p{
     font-size: 4vw;
 }
 }
+.campeones{
+    background-color: rgba(128, 128, 128, 0.678);
+    left: 120px;
+    display: inline-block;
+    width: 25%;
+    height: 20%;
+    margin: 16px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 10px;
+}
+
+#content-campeones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+   
+    
+  
+}
+.campeones img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.campeones .name{
+   word-spacing: 5px;
+    position: relative;
+    font-style: initial;
+    width: 100%;
+    height: 10%;
+    top: 100%;
+    color:#BF930B;
+    font-size: 20px;
+    
+}
+ .campeones .fuerza{
+ width: 0%;
+ height: 150vh;
+ position: absolute;
+ top: 20px;
+ display: flex;
+ background-color:rgba(0, 0, 0, 0.534);
+ line-height: 30px;
+ overflow: hidden;
+ color: #BF930B;
+ }
+
+.campeones:hover .fuerza{
+  width: 100%;
+  height: auto;
+  transition: 1s all;
+}
+footer{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 1);
+}
+.containerFooter{
+    width: 100%;
+    height: 180px;
+    margin: auto;
+}
+.containerFooter_fila1{
+    margin: 20px 0px 0px 500px;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+}
+#icon {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: rgba(134, 117, 64, 0.6);
+    padding-right: 60px;
+    padding-top: 20px;
+}
+.containerFooter_fila2 h1{
+    font-size: 30px;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+.containerFooter_fila3 h1{
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+} 
