@@ -1,5 +1,5 @@
 // estas funciones son de ejemplo
-export const datalol = () => {
+export const datalol = (datalol) => {
   return 'Aatrox';
 };
 

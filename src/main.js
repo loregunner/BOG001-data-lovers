@@ -18,18 +18,37 @@ document.querySelectorAll('#options > .option').forEach((options) => {
         contentSelect.innerHTML = e.currentTarget.innerHTML
         select.classList.toggle('active')
         option.classList.toggle('active')
+        const rolSelected = e.currentTarget.children[0].children[0].textContent;
+        console.log(rolSelected)
+        let newDatos = filtroDato(datos, rolSelected );
+        console.log(newDatos)
+        Tarjetas(newDatos)
+         
     })
 })
 select.addEventListener('click', () => {
     select.classList.toggle('active')
     option.classList.toggle('active')
 })
+let filtroDato = (dato, rol) => {
+    const arrayDato = Object.values(dato)
+    const resulDato = arrayDato.filter(objetRol => {
+        const etiquetasObjets = objetRol.tags
+        console.log(rol)
+        const valuesDato = etiquetasObjets.includes(rol)
+        return valuesDato
+    })
+    return resulDato
+}
+
+
 
 console.log(data.data);
 let datos = data.data;
 function Tarjetas(personajes) {
-    Object.values(personajes).forEach(campeon => {
     let contenedor = document.getElementById("content-campeones");
+    contenedor.innerHTML = "";
+    Object.values(personajes).forEach(campeon => {
     let contenedorCampeones = document.createElement("div");
     contenedorCampeones.classList.add("campeones");
     const imagen = document.createElement("img");
@@ -63,10 +82,10 @@ function Tarjetas(personajes) {
 });
 }
 window.onload = Tarjetas(datos);
-const data0 = (data.data.Aatrox.name);
+const data0 = (data.data.Aatrox.tags);
 const data1 = (data.data.info);
 let data2 = data.data.Aatrox.info;
-console.log(data1, data2)
+console.log(data0)
 
 let lol = JSON.stringify(data.data);
 const lol1 = JSON.stringify(data1);
