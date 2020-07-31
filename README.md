@@ -18,6 +18,7 @@
     - [Sketch inicial](#sketch-inicial)
     - [Sketch inicial mobile](#sketch-inicial-mobile)
     - [Imagen del prototipo final](#imagen-del-prototipo-final)
+    - [Imagen del prototipo final mobile](#imagen-del-prototipo-final-mobile)
   - [5. Planning del proyecto](#5-planning-del-proyecto)
   - [6. Objetivos de aprendizaje](#6-objetivos-de-aprendizaje)
     - [UX](#ux)
@@ -117,8 +118,19 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 
 ### Imagen del prototipo final
 ​
-![PROTORIPO FINAL](src/Imagenes/pantallaPrincipal.png)
+![PROTORIPO FINAL 1](./src/sketch/Inicio.png)
+
+![PROTORIPO FINAL 2](./src/sketch/pagina_media.png)
+
+![PROTORIPO FINAL 3](./src/sketch/pagina_Final.png)
 ​
+### Imagen del prototipo final mobile
+
+![PROTORIPO FINAL 1](./src/sketch/Android.png)
+
+![PROTORIPO FINAL 2](./src/sketch/Android_1.png)
+
+![PROTORIPO FINAL 3](./src/sketch/Android_2.png)
 ​
 ## 5. Planning del proyecto
 ​
