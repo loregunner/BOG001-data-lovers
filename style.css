@@ -11,7 +11,7 @@
 
 html{
     font-family: Friz;
-    background-image: url(Fondo3.jpg);
+    background-image: url(./Fondo3.jpg);
     background-repeat: no-repeat;
     background-position: cover;
     background-size: cover;
@@ -95,7 +95,7 @@ html{
 
 #ctn-bars-search{
     position: fixed;
-    top: -100px;
+    top: -200px;
     width: 100%;
     padding: 20px;
     z-index: 9;
@@ -168,6 +168,46 @@ html{
     #inputSearch{
         font-size: 2vw;
     }
+}
+
+#boton1{
+    color: #AA8513; /*Color texto */
+    border: 2px  rgba(0, 0, 0, 0.274); /* Ancho de borde, estilo de línea y*/
+    text-decoration: none;
+    padding: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #AA8513;
+    border-radius: 6px;
+    position: relative;
+    top:50%;
+    left:83%;
+    margin-left: -170px;
+    margin-top:3px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+}
+#boton1:hover{
+    color:#ffffff;
+    background:transparent;
+}
+
+.Nan{
+    font-size: 5vw;
+    color: #AA8513;
+}
+
+.lol{
+    margin: 50px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: solid #FFFFFF;;
+}
+
+.nan1{
+    font-size: 3vw;
+    color: #AA8513;
 }
 
 .contenedor2{
@@ -352,6 +392,7 @@ a{
     background: #434343;
 }
 
+
 @media screen and (max-width: 900px){
     .selectbox{
         width: 100%;
@@ -436,7 +477,6 @@ a{
 
     .header{
         display: flex;
-
     }
     
     .contenedor2{
@@ -469,7 +509,7 @@ a{
 
     .logo{
     width: 35px;
-}
+    }
 }
 
 @media (min-width: 400px) and (max-width: 767px){
@@ -491,32 +531,6 @@ a{
         font-family: Friz;
         font-size: 7px;
     }
-
-    .modal{
-        width: 500px;
-        height: 400px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .modal_mensaje{
-        padding: 50px 10px;
-        font-size: 1.5vw;
-        color: #AA8513;
-    }
-    
-    .modal_titulo{
-        font-size: 29px;
-    }
-    
-    .modal_final{
-        font-size: 20px;
-        }
-        
-        .modal_cerrar{
-            top: -40px;
-        }
     }
 
     @media (min-width: 767px) and (max-width: 1500px){
@@ -534,7 +548,7 @@ a{
 .campeones{
     background-color: rgba(128, 128, 128, 0.678);
     width: 300px;
-    height: 100px;
+    height: 200px;
     margin: 16px;
     text-align: center;
 }
@@ -619,6 +633,8 @@ a{
     }
 }
 
+
+
 /*Pie de Pagina*/
 
 footer{
@@ -691,6 +707,15 @@ footer{
         font-size: 5vw;
         padding-bottom:25px;
     }
+
+    .modal{
+        width: 80%;
+    }
+
+    .modal_titulo{
+        width: 100%;
+
+    }
 }
 
 @media (min-width: 401px) and (max-width: 900px){
@@ -720,6 +745,50 @@ footer{
         font-size: 5vw;
         padding-bottom:25px;
     }
+
+    .modal{
+        width: 80%;
+    }
+
+    .modal_titulo{
+        height: 10%;
+        font-size: 3vw;
+        margin-top: -450px;
+        display: flex;
+    }
+
+    .tituloModal{
+        margin-top: 10px;
+    }
+
+    .modal_cerrar{
+        display: flex;
+        margin-top: -5px;
+
+    }
+
+    .modal_mensaje{
+        margin-top: -150px;
+        position: absolute;
+        height: 10%;
+        text-align: center;
+    }
+
+    .text1{
+        margin-top: -55px;
+        font-size: 2vw;
+    }
+
+    .modal_final{
+        position: absolute;
+        display: flex;
+        height: 10%;
+        margin-top: 450px;
+        font-size: 2vw;
+    }
+
+
+    
 }
 
 @media (min-width: 901px) and (max-width: 1200px){
@@ -749,8 +818,46 @@ footer{
         font-size: 5vw;
         padding-bottom:25px;
     }
+
+    .tituloModal{
+        font-size: 3vw;
+        margin-top: 10px;
+    }
 }
 
+@media (min-width: 300px) and (max-width: 400px){
+    .text1{
+        font-size: 10px;
+    }
 
+    .modal_titulo{
+        height: 5%;
+        position: fixed;
+        margin-top: -500px;
+        display: flex;
+        
+    }
 
+    .tituloModal{
+        font-size: 15px;
+        margin-top: 5px;
+    }
 
+    .modal_cerrar{
+        width: 10%;
+        height: 15px;
+        margin-top: -5px;
+        z-index: 10;
+    }
+
+    span{
+        width: 10px;
+    }
+
+    .modal_final{
+        height: 5%;
+        font-size: 10px;
+        margin-top: 80px;
+    }
+
+}
