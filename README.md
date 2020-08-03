@@ -16,7 +16,7 @@
   - [4. Look final del proyecto vista de móvil](#4-look-final-del-proyecto-vista-de-móvil)
   - [5. Investigación UX](#5-investigación-ux)
     - [Sketch inicial](#sketch-inicial)
-    - [Sketch inicial mobile](#sketch-inicial-mobile)
+    - [Sketch inicial movil](#sketch-inicial-movil)
     - [Imagen del prototipo final](#imagen-del-prototipo-final)
     - [Imagen del prototipo final mobile](#imagen-del-prototipo-final-mobile)
   - [5. Planning del proyecto](#5-planning-del-proyecto)
@@ -89,30 +89,30 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 ​
 ## 4. Look final del proyecto vista de móvil
 
-![pantalla principalmovil](./src/sketch/mobile1.png)
+![pantalla principal movil](./src/sketch/mobilec.png)
 
-![pantalla principalmovil](./src/sketch/mobile2.png)
+![pantalla principal movil](./src/sketch/mobilev.png)
 
 
 ## 5. Investigación UX
 ​
 ### Sketch inicial
 ​
-![sketch 1](./src/sketch/index1.png)
+![sketch 1](./src/sketch/indexa.png)
 ​
-![sketch 2](./src/sketch/index2.png)
+![sketch 2](./src/sketch/indexb.png)
 ​
-![sketch 3](./src/sketch/historialol.png)
+![sketch 3](./src/sketch/historia.png)
 
 ![sketch 4](./src/sketch/Popup.png)
 
 ![sketch 5](./src/sketch/Footer.png)
 
-### Sketch inicial mobile
+### Sketch inicial movil
 
-![sketch 1](./src/sketch/indexmobile.png)
+![sketch 1](./src/sketch/indexm.png)
 
-​![sketch 2](./src/sketch/index2mobile.png)
+​![sketch 2](./src/sketch/mobile.png)
 
 ![sketch 3](./src/sketch/Asesinos.html.png)
 
@@ -120,17 +120,17 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 ​
 ![PROTORIPO FINAL 1](./src/sketch/Inicio.png)
 
-![PROTORIPO FINAL 2](./src/sketch/paginamedia.png)
+![PROTORIPO FINAL 2](./src/sketch/media.png)
 
-![PROTORIPO FINAL 3](./src/sketch/paginafinal.png)
+![PROTORIPO FINAL 3](./src/sketch/final.png)
 ​
 ### Imagen del prototipo final mobile
 
-![PROTORIPO FINAL](./src/sketch/android.png)
+![PROTORIPO FINAL 1](./src/sketch/movil.png)
 
-![PROTORIPO FINAL](./src/sketch/android1.png)
+![PROTORIPO FINAL 2](./src/sketch/movil1.png)
 
-![PROTORIPO FINAL](./src/sketch/android2.png)
+![PROTORIPO FINAL 3](./src/sketch/movil2.png)
 ​
 ## 5. Planning del proyecto
 ​
