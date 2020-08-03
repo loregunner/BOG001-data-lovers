@@ -89,9 +89,9 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 ​
 ## 4. Look final del proyecto vista de móvil
 
-![pantalla principal](./src/sketch/mobile1.png)
+![pantalla principa movil](./src/sketch/mobile1.png)
 
-![pantalla principa2](./src/sketch/mobile2.png)
+![pantalla principa movil](./src/sketch/mobile2.png)
 
 
 ## 5. Investigación UX
@@ -126,11 +126,11 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 ​
 ### Imagen del prototipo final mobile
 
-![PROTORIPO FINAL 1](./src/sketch/android.png)
+![PROTORIPO FINAL1](./src/sketch/android.png)
 
-![PROTORIPO FINAL 2](./src/sketch/Android1.png)
+![PROTORIPO FINAL2](./src/sketch/android1.png)
 
-![PROTORIPO FINAL 3](./src/sketch/Android2.png)
+![PROTORIPO FINAL3](./src/sketch/android2.png)
 ​
 ## 5. Planning del proyecto
 ​
