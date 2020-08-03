@@ -77,7 +77,7 @@ Luego, forkeamos el proyecto base, lo desarrollamos localmente, desarrollamos la
 ​
 | Carpeta  | Descripción                                                     |
 | :------- | :-------------------------------------------------------------- |
-| sketch | Carpeta con los skecth de alta y baja fidelidad |
+| sketch | Carpeta con los skecth de alta y baja fidelidad. |
 ​
 ## 4. Look final del proyecto vista de ordenador
 ​
