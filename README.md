@@ -26,8 +26,11 @@
     - [DOM](#dom)
     - [Javascript](#javascript)
     - [Testing](#testing)
+    - [Estructura del código y guía de estilo](#estructura-del-código-y-guía-de-estilo)
     - [Git y GitHub](#git-y-github)
     - [Buenas prácticas de desarrollo,](#buenas-prácticas-de-desarrollo)
+    - [Historias de usuario](#historias-de-usuario)
+    - [Checklist](#checklist)
 ​
 ## 1. Preámbulo
 ​
@@ -149,42 +152,76 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 ​
 * [x]  Diseñar la aplicación pensando y entendiendo al usuario
 * [x]  Crear prototipos para obtener feedback e iterar
-* []  Aplicar los principios de diseño visual
+* [ ]  Aplicar los principios de diseño visual
+* [x]  Planear y ejecutar tests de usabilidad.
 ​
 ### HTML y CSS
 ​
 * [x]  Uso correcto de HTML semántico
 * [x]  Uso de selectores de CSS
 * [x]  Construir tu aplicación respetando el diseño realizado (maquetación).
+* [x]  Uso de flexbox en CSS.
 ​
 ### DOM
 ​
-* [x]  Uso de selectores de nodos del DOM
+* [x]  Uso de selectores del DOM
 * [x]  Manejo de eventos del DOM
-* [x]  Manipulación dinámica del DOM
+* [x]  Manipulación dinámica del DOM. (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 ​
 ### Javascript
 ​
-* [x]  Manipulación de strings
-* [x]  Uso de condicionales
-* [x]  Uso de bucles
-* [x]  Uso de funciones
-* [ ]  Datos atómicos y estructurados
-* [x]  Utilizar ES Modules (`import` | `export`).
+* [x] Uso de condicionales (if-else | switch | operador ternario)
+* [x] Uso de bucles (for | for..in | for..of | while)
+* [x] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [x] Manipular arrays (filter | map | sort | reduce)
+* [x] Manipular objects (key | value)
+* [x] Uso ES modules (import | export)
+* [ ] Diferenciar entre expression y statements.
+* [x] Diferenciar entre tipos de datos atómicos y estructurados.
 ​
 ### Testing
 ​
-* [x] [Testeo de tus funciones]
+* [x] [Testeo Unitario]
 ​
+### Estructura del código y guía de estilo
+* [x] Organizar y dividir el código en módulos (Modularización)
+* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [ ] Uso de linter (ESLINT)
 ### Git y GitHub
 ​
 * [x]  Comandos de git (`add` | `commit` | `pull` | `status` | `push`).
-* [x]  Manejo de repositorios de GitHub (`clone` | `fork` ).
-* [x] Manejo de repositorios de GitHub  (`gh-pages`).
+* [x]  Manejo de repositorios de GitHub (`clone` | `fork` | `gh-pages`).
+* [x] Colaboración en Github (`branches` | `pull requests` | `tags`)
 ​
 ### Buenas prácticas de desarrollo,
 ​
 * [x]  Organizar y dividir el código en módulos (Modularización).
 * [x]  Uso de identificadores descriptivos (Nomenclatura | Semántica).
 * [ ]  Uso de linter para seguir buenas prácticas (ESLINT).
+
+### Historias de usuario
+
+1. Hitoria de usuario :  Yo como interesado en jugar LoL quiero conocer de que se trata el juego.
+2. Ver el historial de todos los campeones
+3. Ver información de cada campeón en tarjetas
+4. Filtrar campeones por roles para que el usuario lo encuentre mas dacilmente
+5. Filtrar campeones por Nombres 
+
+### Checklist
+
+* [x] Usa VanillaJS.
+* [x] No hace uso de this.
+* [ ] Pasa linter (npm run pretest)
+* [x] Pasa tests (npm test)
+* [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
+* [x] Incluye Definición del producto clara e informativa en README.md.
+* [x] Incluye historias de usuario en README.md.
+* [x] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
+* [x] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
+* [x] Incluye link a Zeplin o Figma en README.md.
+* [x] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
+* [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [x] UI: Permite filtrar data en base a una condición.
+* [x] UI: Es responsive.
     
