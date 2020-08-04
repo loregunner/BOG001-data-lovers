@@ -1,4 +1,4 @@
-import data from './data/lol/lol.js';
+
 export const filtroDato = (dato, rol) => {
     const arrayDato = Object.values(dato)
     const resulDato = arrayDato.filter(objetRol => {
